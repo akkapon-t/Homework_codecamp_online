@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+<table>
+	<tr>
+		<th><h2 style="text-align:center">Pizza Shop 2.0</h2></th>
+	</tr>
+</table>
+
+
+<form action="post.html" method="post">
+	<table>
+	<tr>
+		<td> 
+			<label for="Name">Name: </label> 
+		</td>
+		<td> 
+			<input type="text" id="name" name="name"></input> <br> 
+		</td>
+	</tr>
+	<tr>
+		<td> 	
+			<label for="Pizza Topping">Pizza Topping: </label> <br> 
+		</td>
+		<td> 	
+			<input type="radio" id="supreme" name="fav_language" value="Supeme"> 
+			<label for="supreme">Supreme</label><br>
+			<input type="radio" id="vegetarian" name="fav_language" value="Vegetarian">
+			<label for="vegetarian">Vegetarian</label><br>
+			<input type="radio" id="hawaiian" name="fav_language" value="Hawaiian">
+			<label for="hawaiian">Hawaiian</label><br> 
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="Pizza Sauce">Pizza Sauce: </label>
+		</td>
+		<td>
+			<select id="sauce" name="sauce">
+				<option value="tomato">Tomato</option>
+				<option value="barbeque">Barbeque</option>
+				<option value="mayonnaise">Mayonnaise</option>
+				<option value="secret">Secret Sauce</option>
+				<option selected="selected" value="secret">Secret Sauce</option>
+			</select> <br>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="optional">Optional Extras: </label>
+		</td>
+		<td>
+			<input type="checkbox" name="extra_cheese" value="1">Extra Cheese</input>
+			<input type="checkbox" name="gluten_free" value="1">Gluten Free Base</input> <br>
+		</td>
+	</tr>
+		
+	</table>
+	<table>
+		<tr>
+			<td>
+				<label for="delivery">Delivery Instructions: </label> <br>
+				<textarea name="delivery" cols="50" rows="4"></textarea> <br>
+			</td>
+		</tr>
+	</table>
+	
+	<input type="submit" value="Send my Order">
+</form>
+
+
+
+
+
+</body>
+
+
+
+</html>
