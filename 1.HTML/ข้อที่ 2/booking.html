@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 30%;
+          }
+          
+          td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>Flying From</td>
+            <td></td>
+            <td>To</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <select id="from" name="Flying From">
+                    <option selected="selected" value="Bangkok">Bangkok</option>
+                    <option value="Rayong">Rayong</option>
+                    <option value="Chonburi">Chonburi</option>
+                    <option value="Changmai">Changmai</option>
+                    
+                </select>
+
+            </td>
+            <td></td>
+            <td>
+                <select id="to" name="Flying To">
+                    <option value="Bangkok">Bangkok</option>
+                    <option selected="selected" value="Rayong">Rayong</option>
+                    <option value="Chonburi">Chonburi</option>
+                    <option value="Changmai">Changmai</option>
+                    
+                </select>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Departing</td>
+            <td></td>
+            <td>Returning</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="date" name="deprting"></td>
+            <td colspan="2"><input type="date" name="returning"></td>
+        </tr>
+        <tr>
+            <td>Adult</td>
+            <td>Child</td>
+            <td>Infant</td>
+            <td>Currency</td>
+        </tr>
+        <tr>
+            <td><input type="number" name="adult" min="1" max="100"></td>
+            <td><input type="number" name="child" min="1" max="100"></td>
+            <td><input type="number" name="infant" min="1" max="100"></td>
+            <td>
+            <select id="currency" name="currency">
+                <option value="SPG">SPG</option>
+                <option selected="THB" value="THB">THB</option>
+                <option value="USD">USD</option>
+                <option value="JPY">JPY</option>
+                
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Search">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
